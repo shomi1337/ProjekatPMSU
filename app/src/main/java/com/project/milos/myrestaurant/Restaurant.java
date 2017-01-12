@@ -16,18 +16,21 @@ public class Restaurant {
     private String description;
     private Bitmap smallPhoto;
     private Bitmap largePhoto;
-    private Address address;
+    private String address;
     private int startHour;
     private int startMinute;
     private int endHour;
     private int endMinute;
     private String phone;
     private String email;
-    private URL site;
+    private String site;
     private List<Meal> meals;
 
+    public Restaurant(){
 
-    public Restaurant(int id, String name, String description, Address address, int startHour, int startMinute, int endHour, int endMinute, String phone, String email, URL site, List<Meal> meals) {
+    }
+
+    public Restaurant(int id, String name, String description, String address, int startHour, int startMinute, int endHour, int endMinute, String phone, String email, String site, List<Meal> meals) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -82,11 +85,11 @@ public class Restaurant {
         this.largePhoto = largePhoto;
     }
 
-    public Address getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
@@ -138,11 +141,11 @@ public class Restaurant {
         this.email = email;
     }
 
-    public URL getSite() {
+    public String getSite() {
         return site;
     }
 
-    public void setSite(URL site) {
+    public void setSite(String site) {
         this.site = site;
     }
 

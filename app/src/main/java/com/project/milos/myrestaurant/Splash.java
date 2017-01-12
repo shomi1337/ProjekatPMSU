@@ -18,9 +18,11 @@ public class Splash extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        final ImageView iv = (ImageView) findViewById(R.id.imageView);
+        final ImageView iv = (ImageView) findViewById(R.id.yin);
         final Animation an = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
         final Animation anSecond = AnimationUtils.loadAnimation(getBaseContext(),R.anim.abc_fade_out);
+//
+//        FillBase.initDB(this);
 
         iv.startAnimation(an);
         an.setAnimationListener(new Animation.AnimationListener() {
@@ -34,7 +36,7 @@ public class Splash extends Activity {
         public void onAnimationEnd(Animation animation) {
             iv.startAnimation(anSecond);
             finish();
-            Intent i = new Intent(getBaseContext(),MainActivity.class);
+            Intent i = new Intent(getBaseContext(),RestaurantsActivity.class);
             startActivity(i);
         }
 
