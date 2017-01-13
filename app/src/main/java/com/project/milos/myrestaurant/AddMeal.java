@@ -52,6 +52,11 @@ public class AddMeal extends AppCompatActivity {
                 m.setPrice(price);
 
                 helper.insertMeal(m);
+                nameText.setText("");
+                descText.setText("");
+                priceText.setText("");
+
+                showMessage("Meal added", "Meal successfully added!");
             }
         });
 
@@ -68,8 +73,8 @@ public class AddMeal extends AppCompatActivity {
                     }
                 StringBuffer buffer = new StringBuffer();
                 while (res.moveToNext()) {
-                    buffer.append("Id : " + res.getString(0));
-                    buffer.append("Name : " + res.getString(1));
+                    buffer.append("Id: " + res.getString(0) );
+                    buffer.append("Name: " + res.getString(1)+"\n");
                 }
                 showMessage("Data", buffer.toString());
             }
