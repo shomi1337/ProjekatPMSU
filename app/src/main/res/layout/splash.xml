@@ -22,7 +22,7 @@
         tools:src="@drawable/yin" />
 
     <TextView
-        android:text="Splash Screen"
+        android:text="Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv"

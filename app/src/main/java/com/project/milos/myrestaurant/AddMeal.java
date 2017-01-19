@@ -73,8 +73,8 @@ public class AddMeal extends AppCompatActivity {
                     }
                 StringBuffer buffer = new StringBuffer();
                 while (res.moveToNext()) {
-                    buffer.append("Id: " + res.getString(0) );
-                    buffer.append("Name: " + res.getString(1)+"\n");
+                    buffer.append("Id: " + res.getString(0)+ " ");
+                    buffer.append("Name: " + res.getString(1)+" \n");
                 }
                 showMessage("Data", buffer.toString());
             }
