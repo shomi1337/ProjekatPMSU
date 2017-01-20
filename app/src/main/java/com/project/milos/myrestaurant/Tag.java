@@ -1,4 +1,4 @@
-package com.project.milos.myrestaurant;
+package com.project.milos.myresstaurant;
 
 import java.util.List;
 

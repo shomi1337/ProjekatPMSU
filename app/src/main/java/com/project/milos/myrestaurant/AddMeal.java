@@ -1,4 +1,4 @@
-package com.project.milos.myrestaurant;
+package com.project.milos.myresstaurant;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * Created by Miloš on 1/10/2017.
@@ -56,7 +57,9 @@ public class AddMeal extends AppCompatActivity {
                 descText.setText("");
                 priceText.setText("");
 
-                showMessage("Meal added", "Meal successfully added!");
+
+                Toast.makeText(getApplicationContext(), "Meal successfully added!", Toast.LENGTH_LONG).show();
+//                showMessage("Meal added", "Meal successfully added!");
             }
         });
 
@@ -84,7 +87,7 @@ public class AddMeal extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent i = new Intent(getBaseContext(),Settings.class);
+                Intent i = new Intent(getApplicationContext(),Settings.class);
                 startActivity(i);
             }
         });

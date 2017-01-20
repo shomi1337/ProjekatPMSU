@@ -1,4 +1,4 @@
-package com.project.milos.myrestaurant;
+package com.project.milos.myresstaurant;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.project.milos.myresstaurant.R;
 
 /**
  * Created by Miloš on 12/28/2016.
@@ -36,7 +38,7 @@ public class Splash extends Activity {
         public void onAnimationEnd(Animation animation) {
             iv.startAnimation(anSecond);
             finish();
-            Intent i = new Intent(getBaseContext(),RestaurantsActivity.class);
+            Intent i = new Intent(getBaseContext(), com.project.milos.myresstaurant.RestaurantsActivity.class);
             startActivity(i);
         }
 

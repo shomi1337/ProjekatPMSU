@@ -1,4 +1,4 @@
-package com.project.milos.myrestaurant;
+package com.project.milos.myresstaurant;
 
 import android.graphics.Bitmap;
 import android.location.Address;

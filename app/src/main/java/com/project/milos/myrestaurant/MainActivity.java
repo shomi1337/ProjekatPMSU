@@ -1,4 +1,4 @@
-package com.project.milos.myrestaurant;
+package com.project.milos.myresstaurant;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
